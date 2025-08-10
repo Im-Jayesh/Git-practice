@@ -6,3 +6,19 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+@keyframes fadeBlurIn {
+  0% { opacity: 0; filter: blur(8px) }
+  100% { opacity: 1; filter: blur(0px) }
+}
+.animate-fadeBlurIn {
+  animation: fadeBlurIn 0.4s ease-out;
+}
